@@ -1,7 +1,11 @@
 import "../../styles/HostDashboard.css"
 import Navigation from "../../components/Navigation"
 import HostVanSectionCard from "../../components/HostVanSectionCard"
+import { VansContext } from "../../context/VansContext"
+import React from "react"
 export default function HostDashboard() {
+  const {vans} = React.useContext(VansContext);
+
   return (
     <div className="dashboard">
 
@@ -29,7 +33,7 @@ export default function HostDashboard() {
 
       {/* HostVansSectionCard */}
      
-      <HostVanSectionCard />
+      <HostVanSectionCard product={vans} />
 
       {/* Footer */}
     
