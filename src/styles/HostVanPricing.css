@@ -1,0 +1,123 @@
+.pricing-page {
+  background: #f5efe6;
+  min-height: 100vh;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Back */
+.back-link {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+/* Van Summary */
+.van-summary {
+  display: flex;
+  gap: 15px;
+  background: white;
+  padding: 15px;
+  border-radius: 14px;
+  align-items: center;
+  margin-bottom: 25px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+}
+
+.van-summary img {
+  width: 90px;
+  height: 90px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.badge {
+  display: inline-block;
+  background: #ff8c38;
+  color: white;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  margin-bottom: 6px;
+}
+
+.van-summary h2 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.price {
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.price span {
+  font-weight: normal;
+  font-size: 13px;
+  color: #666;
+}
+
+/* Main Price Card */
+.main-price-card {
+  background: linear-gradient(135deg, #ff8c38, #ffb26b);
+  color: white;
+  border-radius: 18px;
+  padding: 35px;
+  text-align: center;
+  margin-bottom: 25px;
+  box-shadow: 0 10px 25px rgba(255,140,56,0.3);
+}
+
+.main-price-card h1 {
+  font-size: 40px;
+  margin: 0;
+}
+
+.main-price-card span {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* Pricing Details */
+.pricing-details {
+  background: white;
+  padding: 18px;
+  border-radius: 14px;
+  margin-bottom: 25px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+}
+
+.pricing-details h3 {
+  margin-bottom: 10px;
+}
+
+.pricing-details ul {
+  padding-left: 18px;
+}
+
+.pricing-details li {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+/* Button */
+.edit-btn {
+  width: 100%;
+  padding: 14px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.edit-btn:hover {
+  background: #333;
+}

@@ -1,5 +1,5 @@
 import React from "react"
-import "./HostVanPricing.css"
+import "../../styles/HostVanPricing.css"
 
 export default function HostVanPricing() {
   return (
