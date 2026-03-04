@@ -22,8 +22,7 @@ export default function HostVans() {
     }
   ]
 
-  return (<>
-     <Navigation />
+  return (
     <section className="host-vans">
       <h2 className="title">Your listed vans</h2>
 
@@ -42,5 +41,5 @@ export default function HostVans() {
         ))}
       </div>
     </section>
-  </>)
+  )
 }

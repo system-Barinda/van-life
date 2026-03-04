@@ -9,9 +9,8 @@ export default function HostDashboard() {
 
   return (
     <div className="dashboard">
-    
       {/* Navigation */}
-      <Navigation />
+    
 
       {/* Welcome Section */}
       <section className="welcome">

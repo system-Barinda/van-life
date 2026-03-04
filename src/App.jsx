@@ -13,6 +13,7 @@ import HostVanPhotes from "./pages/mobile/HostVanPhotos"
 import HostVans from "./pages/mobile/HostVans"
 import HostVanPricing from "./pages/mobile/HostVanPricing"
 import Income from "./pages/mobile/Income"
+import Navigation from "./components/Navigation"
 
 function App() {
   return (
@@ -24,7 +25,7 @@ function App() {
           <Route path="/vans" element={<Vans />} />
           <Route path="/vans/:id" element={<VanDetail />} />
 
-              <Route path='/Host' element={<HostDashboard />}>
+              <Route path='/Host' element={<Navigation />}>
                        <Route path='/Host/Vans' element={<HostVans />} />
                        <Route path='/Host/HostVanDetails' element={<HostVanDetails />} />
                        <Route path='/Host/HostReviews' element={<HostReviews />} />
