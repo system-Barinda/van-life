@@ -9,7 +9,7 @@
   display: flex;
   gap: 20px;
   padding: 15px;
-  background: #e6e1d9;
+  background: #f7f6f5;
   font-size: 14px;
 }
 
@@ -54,7 +54,10 @@
 
 .star {
   margin-left: 10px;
-  color: #ff8c38;
+  color: gray;
+}
+.star .dddd{
+    color: black;
 }
 
 /* VANS */

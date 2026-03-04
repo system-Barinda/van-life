@@ -26,7 +26,7 @@ export default function HostDashboard() {
       <section className="review">
         <div>
           <strong>Review score</strong>
-          <span className="star">⭐ 5.0/5</span>
+          <span className="star">⭐ <strong className="dddd">5.0</strong>/5</span>
         </div>
         <span className="link">Details</span>
       </section>
@@ -67,10 +67,7 @@ export default function HostDashboard() {
       </section>
 
       {/* Footer */}
-      <footer className="footer">
-        © 2022 #VANLIFE
-      </footer>
-
+    
     </div>
   )
 }
