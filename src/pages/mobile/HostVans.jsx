@@ -1,4 +1,4 @@
-import "./HostVans.css"
+import "../../styles/HostVans.css"
 
 export default function HostVans() {
   const vans = [
