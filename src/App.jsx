@@ -7,6 +7,12 @@ import Vans from "./pages/Vans"
 import VanDetail from "./pages/VanDetail"
 import Layout from "./components/Layout"
 import HostDashboard from "./pages/mobile/HostDashboard"
+import HostReviews from "./pages/mobile/HostReviews"
+import HostVanDetails from "./pages/mobile/HostVanDetails"
+import HostVanPhotes from "./pages/mobile/HostVanPhotos"
+import HostVans from "./pages/mobile/HostVans"
+import HostVanPricing from "./pages/mobile/HostVanPricing"
+import Income from "./pages/mobile/Income"
 
 function App() {
   return (
