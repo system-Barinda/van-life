@@ -23,11 +23,13 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/vans" element={<Vans />} />
           <Route path="/vans/:id" element={<VanDetail />} />
-          <Route path='/Host' element={<HostDashboard />} />
-          <Route path='/Host/Vans' element={<HostVans />} />
-          <Route path='/Host/HostVanDetails' element={<HostVanDetails />} />
-          <Route path='/Host/HostReviews' element={<HostReviews />} />
-          <Route path='/Host/Income' element={<Income/>} />
+
+              <Route path='/Host' element={<HostDashboard />}>
+                       <Route path='/Host/Vans' element={<HostVans />} />
+                       <Route path='/Host/HostVanDetails' element={<HostVanDetails />} />
+                       <Route path='/Host/HostReviews' element={<HostReviews />} />
+                       <Route path='/Host/Income' element={<Income/>} />
+              </Route>         
         </Route>
       </Routes>
     </BrowserRouter>
