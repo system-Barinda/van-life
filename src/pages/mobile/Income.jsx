@@ -1,5 +1,5 @@
 import React from "react"
-import "./Income.css"
+import "../../styles/Income.css"
 
 export default function Income() {
   return (

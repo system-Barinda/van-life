@@ -1,0 +1,100 @@
+.income-container {
+  background: #f5efe6;
+  min-height: 100vh;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+.income-header h1 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.income-header p {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.income-header p span {
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.income-header h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+/* Chart */
+.income-chart {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  height: 180px;
+  padding: 15px 0;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #ddd;
+}
+
+.bar {
+  width: 12%;
+  background: #e6d3b3;
+  border-radius: 6px 6px 0 0;
+  transition: 0.3s ease;
+}
+
+.bar.active {
+  background: #ff8c38;
+}
+
+/* Transactions Header */
+.transactions-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.transactions-header h3 {
+  font-size: 16px;
+}
+
+.transactions-header p {
+  font-size: 13px;
+  color: #666;
+}
+
+.transactions-header span {
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+/* Transaction Card */
+.transaction-card {
+  background: white;
+  padding: 18px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: 0.2s ease;
+}
+
+.transaction-card:hover {
+  transform: translateY(-2px);
+}
+
+.transaction-card h4 {
+  font-size: 22px;
+  margin: 0;
+}
+
+.transaction-card span {
+  font-size: 14px;
+  color: #777;
+}
