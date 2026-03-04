@@ -1,4 +1,4 @@
-import "./HostDashboard.css"
+import "../styles/HostDashboard.css"
 
 export default function HostDashboard() {
   return (
