@@ -1,0 +1,92 @@
+.van-details-container {
+  background: #f5efe6;
+  min-height: 100vh;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Back Link */
+.back-link {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+/* Card */
+.van-card {
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+/* Image */
+.van-image {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+/* Badge */
+.van-badge {
+  display: inline-block;
+  background: #ff8c38;
+  color: white;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+/* Title */
+.van-card h2 {
+  margin: 8px 0;
+  font-size: 22px;
+}
+
+/* Price */
+.van-price {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.van-price span {
+  font-size: 14px;
+  font-weight: normal;
+  color: #666;
+}
+
+/* Tabs */
+.van-tabs {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.van-tabs span {
+  font-size: 14px;
+  cursor: pointer;
+  color: #777;
+}
+
+.van-tabs .active {
+  color: black;
+  font-weight: bold;
+  border-bottom: 2px solid #ff8c38;
+  padding-bottom: 4px;
+}
+
+/* Info */
+.van-info p {
+  font-size: 14px;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
