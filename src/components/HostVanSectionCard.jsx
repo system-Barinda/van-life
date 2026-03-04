@@ -8,10 +8,10 @@ export default function HostVanSectionCard({product}){
         </div>
          {product.map((item) => (
         <div key={item.id} className="van-card">
-          <img src="/images/van1.png" alt="" />
+          <img src={item.imageUrl} alt="" />
           <div>
-            <h4>Modest Explorer {item.id}</h4>
-            <p>$60/day</p>
+            <h4>{item.name}</h4>
+            <p>${item.price}/day</p>
           </div>
           <span className="edit">Edit</span>
         </div>
