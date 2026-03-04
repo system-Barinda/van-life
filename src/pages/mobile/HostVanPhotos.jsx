@@ -1,5 +1,5 @@
 import React from "react"
-import "./HostVanPhotos.css"
+import "../../styles/HostVanPhotos.css"
 
 export default function HostVanPhotos() {
   return (
