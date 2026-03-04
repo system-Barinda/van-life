@@ -1,16 +1,11 @@
-import "../styles/HostDashboard.css"
-
+import "../../styles/HostDashboard.css"
+import Navigation from "../../components/Navigation"
 export default function HostDashboard() {
   return (
     <div className="dashboard">
 
       {/* Navigation */}
-      <nav className="nav">
-        <span className="active">Dashboard</span>
-        <span>Income</span>
-        <span>Vans</span>
-        <span>Reviews</span>
-      </nav>
+      <Navigation />
 
       {/* Welcome Section */}
       <section className="welcome">
