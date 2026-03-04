@@ -6,7 +6,7 @@ import About from "./pages/About"
 import Vans from "./pages/Vans"
 import VanDetail from "./pages/VanDetail"
 import Layout from "./components/Layout"
-import HostDashboard from "./pages/HostDashboard"
+import HostDashboard from "./pages/mobile/HostDashboard"
 
 function App() {
   return (
