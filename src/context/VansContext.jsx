@@ -1,23 +1,19 @@
-import React, { createContext, useState, useEffect } from "react"
+import React from "react"
 
-export const VansContext = createContext()
+export const VansContext = React.createContext()
 
 export function VansProvider({ children }) {
 
-  const [vans, setVans] = useState([])
-  const [loading, setLoading] = useState(true)
+  const [vans, setVans] = React.useState([])
 
-  useEffect(() => {
+  React.useEffect(() => {
     fetch("/api/vans")
       .then(res => res.json())
-      .then(data => {
-        setVans(data.vans)
-        setLoading(false)
-      })
+      .then(data => setVans(data.vans))
   }, [])
 
   return (
-    <VansContext.Provider value={{ vans, loading }}>
+    <VansContext.Provider value={{ vans }}>
       {children}
     </VansContext.Provider>
   )
