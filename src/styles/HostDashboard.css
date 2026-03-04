@@ -1,0 +1,118 @@
+.dashboard {
+  font-family: Arial, sans-serif;
+  background: #f7f3ed;
+  min-height: 100vh;
+}
+
+/* NAV */
+.nav {
+  display: flex;
+  gap: 20px;
+  padding: 15px;
+  background: #e6e1d9;
+  font-size: 14px;
+}
+
+.nav span {
+  cursor: pointer;
+}
+
+.nav .active {
+  font-weight: bold;
+  border-bottom: 2px solid black;
+}
+
+/* WELCOME */
+.welcome {
+  background: #f1d6b8;
+  padding: 20px;
+}
+
+.welcome h1 {
+  margin-bottom: 10px;
+}
+
+.welcome-top {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.welcome h2 {
+  font-size: 32px;
+  margin-top: 10px;
+}
+
+/* REVIEW */
+.review {
+  background: #e9c8a2;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.star {
+  margin-left: 10px;
+  color: #ff8c38;
+}
+
+/* VANS */
+.vans {
+  padding: 20px;
+}
+
+.vans-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.van-card {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+.van-card img {
+  width: 60px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.van-card h4 {
+  margin: 0;
+  font-size: 14px;
+}
+
+.van-card p {
+  margin: 2px 0 0;
+  font-size: 13px;
+  color: gray;
+}
+
+.edit {
+  margin-left: auto;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+/* FOOTER */
+.footer {
+  background: #1f1f1f;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 13px;
+  margin-top: 20px;
+}
+
+.link {
+  font-size: 13px;
+  cursor: pointer;
+}
