@@ -1,4 +1,4 @@
-import "./HostReviews.css"
+import "../../styles/HostReviews.css"
 
 export default function HostReviews() {
   return (
