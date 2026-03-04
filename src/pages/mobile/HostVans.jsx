@@ -1,5 +1,5 @@
 import "../../styles/HostVans.css"
-
+import Navigation from "../../components/Navigation"
 export default function HostVans() {
   const vans = [
     {
@@ -22,7 +22,8 @@ export default function HostVans() {
     }
   ]
 
-  return (
+  return (<>
+     <Navigation />
     <section className="host-vans">
       <h2 className="title">Your listed vans</h2>
 
@@ -41,5 +42,5 @@ export default function HostVans() {
         ))}
       </div>
     </section>
-  )
+  </>)
 }

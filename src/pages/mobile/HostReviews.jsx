@@ -1,7 +1,8 @@
 import "../../styles/HostReviews.css"
-
+import Navigation from "../../components/Navigation" 
 export default function HostReviews() {
-  return (
+  return ( <>
+      <Navigation />
     <section className="host-reviews">
 
       {/* Title */}
@@ -69,5 +70,5 @@ export default function HostReviews() {
       </div>
 
     </section>
-  )
+  </>)
 }

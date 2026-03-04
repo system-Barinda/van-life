@@ -1,8 +1,9 @@
 import React from "react"
 import "../../styles/Income.css"
-
+import Navigation from "../../components/Navigation"
 export default function Income() {
-  return (
+  return (<>
+  <Navigation />
     <div className="income-container">
       
       <div className="income-header">
@@ -41,5 +42,5 @@ export default function Income() {
       </div>
 
     </div>
-  )
+  </>)
 }
