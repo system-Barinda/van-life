@@ -1,26 +1,9 @@
 import "../../styles/HostVans.css"
 import Navigation from "../../components/Navigation"
+import { VansContext } from "../../context/VansContext"
+import { useContext } from "react"
 export default function HostVans() {
-  const vans = [
-    {
-      id: 1,
-      name: "Modest Explorer",
-      price: 60,
-      image: "/images/van1.png"
-    },
-    {
-      id: 2,
-      name: "Beach Bum",
-      price: 80,
-      image: "/images/van2.png"
-    },
-    {
-      id: 3,
-      name: "Green Wonder",
-      price: 70,
-      image: "/images/van3.png"
-    }
-  ]
+  const {vans} = useContext(VansContext)
 
   return (
     <section className="host-vans">
@@ -29,7 +12,7 @@ export default function HostVans() {
       <div className="vans-list">
         {vans.map(van => (
           <div key={van.id} className="van-card">
-            <img src={van.image} alt={van.name} />
+            <img src={van.imageUrl} alt={van.name} />
 
             <div className="van-info">
               <h3>{van.name}</h3>

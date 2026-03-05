@@ -37,6 +37,7 @@ function App() {
                        <Route path='HostReviews' element={<HostReviews />} />
                        <Route path='Income' element={<Income/>} />
               </Route>         
+              
         </Route>
       </Routes>
     </BrowserRouter>
