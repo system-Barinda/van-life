@@ -3,10 +3,11 @@ import "../../styles/HostVanDetails.css"
 import { useParams } from "react-router-dom"
 import { VansContext } from "../../context/VansContext"
 export default function VanDetails() {
-     const params = useParams()
-     const {items} = useContext(VansContext)
-     const van = items.find(v => v.id.toString() === params.id);
-     console.log(van)
+   const params = useParams()
+  const { vans } = useContext(VansContext)
+
+  const van = vans.find(v => v.id.toString() === params.id)
+  
   return (
     <div className="van-details-container">
 
