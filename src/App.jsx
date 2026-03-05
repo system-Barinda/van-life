@@ -35,7 +35,7 @@ function App() {
           <Route path="Host" element={<Navigation />}>
 
             <Route index element={<HostDashboard />} />
-
+             <Route path='HostVans' element={<HostVans />} />
             {/* FIXED */}
             <Route path="HostVanDetails/:id" element={<HostVanDetails />} />
 
