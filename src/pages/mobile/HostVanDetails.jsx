@@ -7,6 +7,10 @@ export default function VanDetails() {
   const { vans } = useContext(VansContext)
 
   const van = vans.find(v => v.id.toString() === params.id)
+
+  if (!van) {
+    return <h2>Loading van details...</h2>
+  }
   
   return (
     <div className="van-details-container">
@@ -23,8 +27,8 @@ export default function VanDetails() {
 
         <span className="van-badge">Simple</span>
 
-        <h2>Modest Explorer</h2>
-        <p className="van-price">$60<span>/day</span></p>
+        <h2>{van.name}</h2>
+        <p className="van-price">${van.price}<span>/day</span></p>
 
         <div className="van-tabs">
           <span className="active">Details</span>
@@ -36,11 +40,7 @@ export default function VanDetails() {
           <p><strong>Name:</strong> Modest Explorer</p>
           <p><strong>Category:</strong> Simple</p>
           <p>
-            <strong>Description:</strong> The Modest Explorer is a van designed 
-            to get you out of the house and into nature. This beauty is equipped 
-            with solar panels, a composting toilet, a water tank and kitchenette.
-            The idea is that you can pack up your home and escape for a weekend or even longer!
-          </p>
+            <strong>Description:</strong> {van.description} </p>
           <p><strong>Visibility:</strong> Public</p>
         </div>
 
