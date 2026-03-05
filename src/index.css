@@ -52,6 +52,11 @@ header a:hover {
 main {
     margin-bottom: 84px;
 }
+.isActiveHost{
+        font-weight: bold;
+        text-decoration: underline;
+        color: #161616;
+}
 
 footer {
     background-color: #161616;
