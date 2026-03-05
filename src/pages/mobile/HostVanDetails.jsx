@@ -16,7 +16,7 @@ export default function VanDetails() {
       <div className="van-card">
 
         <img 
-          src="https://assets.scrimba.com/advanced-react/react-router/modest-explorer.png" 
+          src={van.imageUrl} 
           alt="Modest Explorer"
           className="van-image"
         />
