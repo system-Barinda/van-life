@@ -6,9 +6,9 @@ export default function Header() {
         <header>
             <Link className="site-logo" to="/">#VanLife</Link>
             <nav>
-                <Link to="/Host">Host</Link>
-                <Link to="/about">About</Link>
-                <Link to="/vans">Vans</Link>
+                <NavLink className={(isActiveHeaderMenu) => isActiveHeaderMenu ? "isActiveheaderMenu" : null } to="/Host">Host</NavLink>
+                <NavLink className={(isActiveHeaderMenu) => isActiveHeaderMenu ? "isActiveheaderMenu" : null } to="/about">About</NavLink>
+                <NavLink className={(isActiveHeaderMenu) => isActiveHeaderMenu ? "isActiveheaderMenu" : null } to="/vans">Vans</NavLink>
             </nav>
         </header>
     )
