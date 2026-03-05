@@ -26,7 +26,7 @@ function App() {
           <Route path="vans/:id" element={<VanDetail />} />
 
               <Route path='Host' element={<Navigation />}>
-                       <Route path='Host' element={<HostDashboard />} />
+                       <Route index element={<HostDashboard />} />
                        <Route path='Vans' element={<HostVans />} />
                        <Route path='HostVanDetails' element={<HostVanDetails />} />
                        <Route path='HostReviews' element={<HostReviews />} />
