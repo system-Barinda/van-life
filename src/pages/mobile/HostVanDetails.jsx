@@ -1,6 +1,6 @@
 import React, { useContext } from "react"
-import "../../styles/HostVanDetails.css"
-import { useParams, Link } from "react-router-dom"
+// import "../../styles/HostVanDetails.css"
+import { useParams, Link ,NavLink } from "react-router-dom"
 import { VansContext } from "../../context/VansContext"
 
 export default function VanDetails() {
@@ -14,16 +14,59 @@ export default function VanDetails() {
     return <h2>Loading van details...</h2>
   }
 
-  return (
-    <div className="van-details-container">
+//   return (
+//     <div className="van-details-container">
 
-      <Link to="/Host/Vans" className="back-link">
+//       <Link to="/Host/Vans" className="back-link">
+//         ← Back to all vans
+//       </Link>
+    
+//        <div className="van-card">
+
+//   <div className="van-header">
+    
+//     <img
+//       src={van.imageUrl}
+//       alt={van.name}
+//       className="van-image"
+//     />
+
+//     <div className="van-header-info">
+//       <span className="van-badge">{van.type}</span>
+//       <h2>{van.name}</h2>
+//       <p className="van-price">
+//         ${van.price}<span>/day</span>
+//       </p>
+//     </div>
+
+//   </div>
+
+//   <div className="van-tabs">
+//     <span className="active">Details</span>
+//     <span>Pricing</span>
+//     <span>Photos</span>
+//   </div>
+
+//   <div className="van-info">
+//     <p><strong>Name:</strong> {van.name}</p>
+//     <p><strong>Category:</strong> {van.type}</p>
+//     <p><strong>Description:</strong> {van.description}</p>
+//     <p><strong>Visibility:</strong> Public</p>
+//   </div>
+
+// </div>
+//     </div>
+//   )
+
+return (
+    <div className="hostVan-container">
+
+      <NavLink className="back-link" to="/host/vans">
         ← Back to all vans
-      </Link>
+      </NavLink>
 
       <div className="van-card">
 
-        {/* TOP SECTION */}
         <div className="van-header">
 
           <img
@@ -32,10 +75,8 @@ export default function VanDetails() {
             className="van-image"
           />
 
-          <div className="van-header-info">
-            <span className={`van-badge ${van.type}`}>
-              {van.type}
-            </span>
+          <div className="van-info-top">
+            <span className="van-type">{van.type}</span>
 
             <h2>{van.name}</h2>
 
@@ -46,21 +87,24 @@ export default function VanDetails() {
 
         </div>
 
-        {/* TABS */}
         <div className="van-tabs">
           <span className="active">Details</span>
           <span>Pricing</span>
           <span>Photos</span>
         </div>
 
-        {/* DETAILS */}
-        <div className="van-info">
+        <div className="van-details">
+
           <p><strong>Name:</strong> {van.name}</p>
+
           <p><strong>Category:</strong> {van.type}</p>
+
           <p>
             <strong>Description:</strong> {van.description}
           </p>
+
           <p><strong>Visibility:</strong> Public</p>
+
         </div>
 
       </div>
