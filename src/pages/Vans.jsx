@@ -38,7 +38,7 @@ export default function Vans() {
     <button className="van-filter simple" onClick={() => handleType('simple')}>Simple</button>
     <button className="van-filter rugged" onClick={() => handleType('rugged')}>Rugged</button>
     <button className="van-filter luxury" onClick={() => handleType('luxury')}>Luxury</button>
-     <button onClick={() => setSearchParams({})} >Clear</button>
+     <button onClick={() => setSearchParams({})} >Clear filters <hr /></button>
 </div>
             <div className="van-list">
                 {vanElements}
