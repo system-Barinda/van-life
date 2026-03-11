@@ -314,3 +314,46 @@ i[class*='van-type-'] {
   background: #f1f1f1;
   transition: all 0.2s ease;
 }
+.menu-vans {
+  display: flex;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+
+.van-filter:hover {
+  transform: translateY(-2px);
+}
+
+/* Individual colors */
+.simple {
+  background-color: #f1aa53;
+}
+
+.menu-vans button:hover {
+  background: #474646;
+}
+
+.rugged {
+  background-color: #115E59;
+  color: white;
+}
+
+.luxury {
+  background-color: #161616;
+  color: white;
+}
+
+.van-type {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px 12px;
+  border-radius: 5px;
+  font-size: 13px;
+  text-transform: capitalize;
+}
+
+/* type colors */
+.van-type.simple { background: #d99c51; }
+.van-type.luxury { background: #161616; color: white; }
+.van-type.rugged { background: #115E59; color: white; }
