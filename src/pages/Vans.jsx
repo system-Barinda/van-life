@@ -1,14 +1,17 @@
 import React, { useContext } from "react"
-import { Link } from "react-router-dom"
+import { Link, useSearchParams } from "react-router-dom"
 import { VansContext } from "../context/VansContext"
 
 export default function Vans() {
 
     const { vans } = useContext(VansContext)
+    const [searchParams,setSearchParams] = useSearchParams();
+    const typeFilter = searchParams.get("type");
+    const desplayType = typeFilter ? vans.filter(v => v.type === typeFilter) : vans;
 
     if (!vans) return <p>Loading...</p>
 
-    const vanElements = vans.map(van => (
+    const vanElements =desplayType.map(van => (
         <div key={van.id} className="van-tile">
             <Link to={`/vans/${van.id}`}>
                 <img src={van.imageUrl} alt={van.name} />
