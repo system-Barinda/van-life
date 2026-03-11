@@ -8,7 +8,9 @@ export default function Vans() {
     const [searchParams,setSearchParams] = useSearchParams();
     const typeFilter = searchParams.get("type");
     const desplayType = typeFilter ? vans.filter(v => v.type === typeFilter) : vans;
-
+    function handleType(type){
+        setSearchParams({type});
+    }
     if (!vans) return <p>Loading...</p>
 
     const vanElements =desplayType.map(van => (
@@ -33,9 +35,9 @@ export default function Vans() {
             <h1>Explore our van options</h1>
 
    <div className="menu-vans">
-    <button className="van-filter simple">Simple</button>
-    <button className="van-filter rugged">Rugged</button>
-    <button className="van-filter luxury">Luxury</button>
+    <button className="van-filter simple" onClick={() => handleType('simple')}>Simple</button>
+    <button className="van-filter rugged" onClick={() => handleType('rugged')}>Rugged</button>
+    <button className="van-filter luxury" onClick={() => handleType('luxury')}>Luxury</button>
      <button >Clear</button>
 </div>
             <div className="van-list">
